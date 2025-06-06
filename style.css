@@ -41,10 +41,18 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Estilo base para pantallas grandes (PC) */
 table {
   width: 50%;
   border-collapse: collapse;
   margin-top: 20px;
+}
+
+/* Estilo para pantallas pequeñas (celulares) */
+@media (max-width: 768px) {
+  table {
+    width: 90%;
+  }
 }
 
 th, td {
