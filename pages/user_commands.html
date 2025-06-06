@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comandos de Usuario - Wiki de Ciudad del Tango</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <h1>Comandos de Usuario</h1>
+  <nav>
+    <a href="../index.html">Volver al índice</a>
+  </nav>
+
+  <!-- ChestSort -->
+  <h2>ChestSort</h2>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/sort</td><td>Abre el menú de ChestSort para elegir con qué atajos ordenarás tus cofres/inventario.</td></tr>
+  </table>
+
+  <!-- CoordinatesHud -->
+  <h2>CoordinatesHud</h2>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/coordinates toggle</td><td>Activa o desactiva las coordenadas en pantalla.</td></tr>
+  </table>
+
+  <!-- EcoJobs -->
+  <h2>EcoJobs</h2>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/jobs</td><td>Abre el menú de trabajos.</td></tr>
+    <tr><td>/jobs join &lt;Trabajo&gt;</td><td>Te unes a un trabajo.</td></tr>
+    <tr><td>/jobs leave &lt;Trabajo&gt;</td><td>Abandonas un trabajo.</td></tr>
+  </table>
+
+  <!-- InteractiveChat -->
+  <h2>InteractiveChat</h2>
+  <p>Contamos con etiquetas personalizadas para el chat. Úsalas en tus mensajes, por ejemplo: "Estoy aquí [pos]"</p>
+  <table>
+    <tr><th>Etiqueta</th><th>Descripción</th></tr>
+    <tr><td>[item]</td><td>Muestra el ítem que tienes en la mano.</td></tr>
+    <tr><td>[inv]</td><td>Muestra tu inventario.</td></tr>
+    <tr><td>[ender]</td><td>Muestra el contenido de tu cofre ender.</td></tr>
+    <tr><td>[pos]</td><td>Muestra tus coordenadas.</td></tr>
+    <tr><td>[money]</td><td>Muestra tu balance actual.</td></tr>
+    <tr><td>[ping]</td><td>Muestra tu ping actual.</td></tr>
+  </table>
+
+  <!-- SkinsRestorer -->
+  <h2>SkinsRestorer</h2>
+  <p>Puedes cambiar tu skin una vez cada 24hs!</p>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/skin &lt;nombre&gt;</td><td>Pones el nick de una cuenta premium y te pone su skin.</td></tr>
+    <tr><td>/skin url &lt;url&gt;</td><td>Puedes poner la URL de una skin (p. ej. de https://es.namemc.com/).</td></tr>
+  </table>
+
+  <!-- LiteFish -->
+  <h2>LiteFish</h2>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/lfish menu</td><td>Abre el menú principal de LiteFish.</td></tr>
+    <tr><td>/lfish sell</td><td>Abre la interfaz para vender tus peces.</td></tr>
+    <tr><td>/lfish catalog</td><td>Abre el catálogo de peces disponibles.</td></tr>
+    <tr><td>/lfish drop [rareza]</td><td>Muestra las probabilidades y parámetros de los drops en la ubicación actual.</td></tr>
+    <tr><td>/lfish tournament join</td><td>Te unes a un torneo activo.</td></tr>
+  </table>
+
+  <!-- Fauction -->
+  <h2>Fauction</h2>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/ah</td><td>Abre la interfaz del marketplace.</td></tr>
+    <tr><td>/ah sell [precio]</td><td>Permite poner un ítem en venta (en mano principal).</td></tr>
+    <tr><td>/ah expire</td><td>Ver lista de tus ítems expirados.</td></tr>
+  </table>
+
+  <!-- BetterTeams -->
+  <h2>BetterTeams</h2>
+  <h3>Comandos generales</h3>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/team join [equipo]</td><td>Te unes al equipo especificado.</td></tr>
+    <tr><td>/team create [nombre]</td><td>Crea un nuevo equipo con el nombre indicado.</td></tr>
+    <tr><td>/team leave</td><td>Abandonas tu equipo actual.</td></tr>
+    <tr><td>/team home</td><td>Te teletransporta a la casa de tu equipo.</td></tr>
+    <tr><td>/team chat [mensaje]</td><td>Envía un mensaje al chat del equipo o activa el modo de chat de equipo.</td></tr>
+    <tr><td>/team info [equipo|jugador]</td><td>Muestra información sobre un equipo o jugador.</td></tr>
+    <tr><td>/team top</td><td>Muestra los equipos con mejor ranking.</td></tr>
+    <tr><td>/team baltop</td><td>Muestra los equipos más ricos.</td></tr>
+    <tr><td>/team rank [equipo]</td><td>Muestra el rango de un equipo.</td></tr>
+    <tr><td>/team bal</td><td>Muestra el saldo de tu equipo.</td></tr>
+    <tr><td>/team deposit [cantidad]</td><td>Deposita dinero en el saldo del equipo.</td></tr>
+    <tr><td>/team allychat [mensaje]</td><td>Envía un mensaje visible solo para aliados.</td></tr>
+    <tr><td>/team echest</td><td>Abre el ender chest de tu equipo.</td></tr>
+    <tr><td>/team</td><td>Muestra información general de tu equipo.</td></tr>
+  </table>
+
+  <h3>Comandos para administradores y dueños</h3>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/team invite [jugador]</td><td>Invita a un jugador a tu equipo.</td></tr>
+    <tr><td>/team kick [jugador]</td><td>Expulsa a un jugador del equipo.</td></tr>
+    <tr><td>/team ban [jugador]</td><td>Banea a un jugador del equipo.</td></tr>
+    <tr><td>/team unban [jugador]</td><td>Permite que un jugador vuelva al equipo.</td></tr>
+    <tr><td>/team sethome</td><td>Establece la casa del equipo.</td></tr>
+    <tr><td>/team delhome</td><td>Elimina la casa del equipo.</td></tr>
+    <tr><td>/team withdraw [cantidad]</td><td>Retira dinero del saldo del equipo.</td></tr>
+    <tr><td>/team chest claim</td><td>Reclama el cofre en el que estás parado.</td></tr>
+    <tr><td>/team chest remove</td><td>Elimina el reclamo del cofre en el que estás parado.</td></tr>
+    <tr><td>/team pvp</td><td>Activa o desactiva el PVP entre miembros.</td></tr>
+  </table>
+
+  <h3>Comandos solo para dueños</h3>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/team disband</td><td>Disuelve el equipo y expulsa a todos los miembros.</td></tr>
+    <tr><td>/team name [nuevo nombre]</td><td>Cambia el nombre del equipo.</td></tr>
+    <tr><td>/team description [texto]</td><td>Cambia la descripción del equipo.</td></tr>
+    <tr><td>/team open</td><td>Activa o desactiva si el equipo es por invitación o abierto.</td></tr>
+    <tr><td>/team promote [jugador]</td><td>Asciende a un jugador a un rango superior.</td></tr>
+    <tr><td>/team demote [jugador]</td><td>Degrada a un jugador a un rango inferior.</td></tr>
+    <tr><td>/team title [jugador/me] [título]</td><td>Cambia el título de un jugador.</td></tr>
+    <tr><td>/team color [código]</td><td>Cambia el color del nombre del equipo.</td></tr>
+    <tr><td>/team ally [equipo]</td><td>Solicita o acepta una alianza.</td></tr>
+    <tr><td>/team neutral [equipo]</td><td>Rompe una alianza con otro equipo.</td></tr>
+    <tr><td>/team setowner [jugador]</td><td>Asigna a un nuevo dueño (si está habilitado “singleOwner”).</td></tr>
+    <tr><td>/team chest removeall</td><td>Elimina todos los cofres reclamados.</td></tr>
+    <tr><td>/team rankup</td><td>Asciende el equipo al siguiente nivel.</td></tr>
+    <tr><td>/team tag [etiqueta]</td><td>Cambia la etiqueta del equipo.</td></tr>
+  </table>
+
+  <!-- Essentials -->
+  <h2>Essentials</h2>
+  <h3>Chat y Comunicación</h3>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/helpop [mensaje]</td><td>Envía un mensaje privado a los administradores o moderadores.</td></tr>
+    <tr><td>/msg [jugador] [mensaje]</td><td>Envía un mensaje privado a otro jugador.</td></tr>
+    <tr><td>/ignore [jugador]</td><td>Ignora los mensajes privados de un jugador específico.</td></tr>
+    <tr><td>/r [mensaje]</td><td>Responde al último mensaje privado recibido.</td></tr>
+    <tr><td>/msgtoggle</td><td>Activa o desactiva la recepción de mensajes privados.</td></tr>
+    <tr><td>/afk</td><td>Cambia tu estado a "Ausente".</td></tr>
+    <tr><td>/realname [jugador]</td><td>Muestra el nick real de un jugador.</td></tr>
+  </table>
+
+  <h3>Teletransporte y Movilidad</h3>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/sethome [nombre]</td><td>Establece un hogar en tu ubicación actual.</td></tr>
+    <tr><td>/home [nombre]</td><td>Teletransporta a uno de tus hogares establecidos.</td></tr>
+    <tr><td>/delhome [nombre]</td><td>Elimina uno de tus hogares.</td></tr>
+    <tr><td>/renamehome [actual] [nuevo nombre]</td><td>Renombra un hogar.</td></tr>
+    <tr><td>/spawn</td><td>Teletransporta al punto de aparición.</td></tr>
+    <tr><td>/warp [nombre]</td><td>Teletransporta a un warp establecido.</td></tr>
+    <tr><td>/tpa [jugador]</td><td>Envía una solicitud para teletransportarte a otro jugador.</td></tr>
+    <tr><td>/tpacancel</td><td>Cancela tu solicitud de teleport.</td></tr>
+    <tr><td>/tpahere [jugador]</td><td>Solicita que otro jugador se teletransporte a ti.</td></tr>
+    <tr><td>/tpaccept</td><td>Acepta una solicitud de teleport.</td></tr>
+    <tr><td>/tpdeny</td><td>Rechaza una solicitud de teleport.</td></tr>
+    <tr><td>/tpauto</td><td>Activa o desactiva la aceptación automática de solicitudes.</td></tr>
+    <tr><td>/tptoggle</td><td>Activa o desactiva recibir solicitudes de teleport.</td></tr>
+  </table>
+
+  <h3>Utilidades Generales</h3>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/pay [jugador] [cantidad]</td><td>Envía dinero a otro jugador.</td></tr>
+    <tr><td>/paytoggle</td><td>Activa o desactiva la recepción de pagos.</td></tr>
+    <tr><td>/balance</td><td>Muestra tu saldo.</td></tr>
+    <tr><td>/balancetop</td><td>Muestra el top de jugadores con más saldo.</td></tr>
+    <tr><td>/compass</td><td>Muestra la dirección a la que estás mirando.</td></tr>
+    <tr><td>/ping</td><td>Muestra tu ping actual.</td></tr>
+    <tr><td>/condense</td><td>Convierte ítems en bloques compactos.</td></tr>
+    <tr><td>/disposal</td><td>Abre un contenedor para desechar ítems.</td></tr>
+    <tr><td>/recipe [item]</td><td>Muestra la receta de crafteo.</td></tr>
+  </table>
+
+  <!-- ProtectionStones -->
+  <h2>ProtectionStones</h2>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/ps toggle|on|off</td><td>Activa o desactiva la colocación de bloques de protección.</td></tr>
+    <tr><td>/ps info members|owners|flags</td><td>Muestra información de la región actual.</td></tr>
+    <tr><td>/ps view</td><td>Muestra los límites de la región con partículas.</td></tr>
+    <tr><td>/ps add|remove [jugador]</td><td>Añade o quita miembros de tu región protegida.</td></tr>
+    <tr><td>/ps addowner|removeowner [jugador]</td><td>Añade o quita propietarios de la región.</td></tr>
+    <tr><td>/ps flag [flag] [valor|null|default]</td><td>Ajusta flags para tu región. Usa solo /ps flag para abrir el menú GUI.</td></tr>
+    <tr><td>/ps name [nombre|none]</td><td>Asigna o borra un nombre a la región.</td></tr>
+    <tr><td>/ps merge</td><td>Fusiona la región actual con una adyacente.</td></tr>
+    <tr><td>/ps unclaim [id (opcional)]</td><td>Recupera el bloque de protección y elimina la región.</td></tr>
+    <tr><td>/ps hide</td><td>Oculta el bloque de protección.</td></tr>
+    <tr><td>/ps unhide</td><td>Muestra el bloque de protección si estaba oculto.</td></tr>
+  </table>
+
+  <!-- Tchat -->
+  <h2>Tchat</h2>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/discord</td><td>Manda una invitación al Discord.</td></tr>
+  </table>
+
+  <!-- AdvancedEnchantments -->
+  <h2>AdvancedEnchantments</h2>
+  <table>
+    <tr><th>Comando</th><th>Descripción</th></tr>
+    <tr><td>/ae info (encantamiento)</td><td>Muestra información de un encantamiento.</td></tr>
+  </table>
+
+</body>
+</html>

@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Comandos de Administradores - Wiki de Ciudad del Tango</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <h1>Comandos de Administradores</h1>
+  <nav>
+    <a href="../index.html">Volver al índice</a>
+  </nav>
+<!-- Essentials -->
+
+<h2>Essentials</h2>
+
+<h3>Chat y Comunicación:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/broadcast [mensaje]</td><td>Envía un mensaje global a todo el servidor.</td></tr>
+  <tr><td>/broadcastworld [mensaje]</td><td>Envía un mensaje global solo en tu mundo actual.</td></tr>
+</table>
+
+<h3>Teletransporte y Movilidad:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/tpohere [jugador]</td><td>Teletransporta a un jugador a tu ubicación sin permiso.</td></tr>
+  <tr><td>/tphere [jugador]</td><td>Teletransporta a un jugador a tu ubicación.</td></tr>
+  <tr><td>/jump</td><td>Teletransporta a la ubicación que estás mirando.</td></tr>
+  <tr><td>/tppos [x] [y] [z]</td><td>Teletransporta a unas coordenadas específicas.</td></tr>
+  <tr><td>/tpr [jugador]</td><td>Teletransporta a un jugador aleatoriamente en un radio.</td></tr>
+  <tr><td>/tpauto</td><td>Activa o desactiva la aceptación automática de solicitudes.</td></tr>
+  <tr><td>/back</td><td>Vuelve a la última ubicación en la que estuviste.</td></tr>
+  <tr><td>/fly</td><td>Activa o desactiva el vuelo.</td></tr>
+  <tr><td>/world [mundo]</td><td>Cambia entre mundos.</td></tr>
+  <tr><td>/tpall</td><td>Teletransporta a todos los jugadores a tu ubicación.</td></tr>
+  <tr><td>/tpalltpoffline</td><td>Teletransporta a todos los jugadores, incluyendo los desconectados.</td></tr>
+</table>
+
+<h3>Utilidades Generales:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/nick [nombre]</td><td>Cambia tu apodo.</td></tr>
+  <tr><td>/eco</td><td>Gestiona el sistema económico.</td></tr>
+  <tr><td>/exp [cantidad]</td><td>Ajusta tu cantidad de experiencia.</td></tr>
+  <tr><td>/feed</td><td>Restaura tu barra de hambre.</td></tr>
+  <tr><td>/heal</td><td>Restaura tu salud.</td></tr>
+  <tr><td>/gc</td><td>Muestra información del servidor (memoria, TPS, etc.).</td></tr>
+  <tr><td>/rest</td><td>Te permite dormir aunque no sea de noche.</td></tr>
+  <tr><td>/clearinventory</td><td>Vacía tu inventario.</td></tr>
+  <tr><td>/repair</td><td>Repara el objeto que tienes en la mano.</td></tr>
+  <tr><td>/workbench, /anvil, /cartographytable, /grindstone, /smithingtable, /stonecutter, /loom, /enderchest</td><td>Abre interfaces portátiles.</td></tr>
+  <tr><td>/ext</td><td>Apaga el fuego si estás ardiendo.</td></tr>
+  <tr><td>/ptime [hora]</td><td>Cambia tu hora personal.</td></tr>
+  <tr><td>/pweather [clima]</td><td>Cambia tu clima personal.</td></tr>
+  <tr><td>/item</td><td>Te da el ítem que estás mirando.</td></tr>
+  <tr><td>/itemdb</td><td>Muestra el ID del objeto que tienes en la mano.</td></tr>
+  <tr><td>/itemlore [texto]</td><td>Cambia el lore de un objeto.</td></tr>
+  <tr><td>/itemname [nombre]</td><td>Cambia el nombre de un objeto.</td></tr>
+  <tr><td>/skull [jugador]</td><td>Obtén la cabeza de un jugador.</td></tr>
+  <tr><td>/enchant [nivel]</td><td>Encanta el objeto que sostienes.</td></tr>
+  <tr><td>/book</td><td>Abre un libro editable.</td></tr>
+  <tr><td>/spawnmob [tipo] [cantidad]</td><td>Genera mobs.</td></tr>
+  <tr><td>/socialspy</td><td>Permite ver mensajes privados de otros.</td></tr>
+  <tr><td>/powertool [comando]</td><td>Asigna un comando a un objeto.</td></tr>
+  <tr><td>/powertooltoggle</td><td>Activa o desactiva el powertool.</td></tr>
+  <tr><td>/sudo [jugador] [comando]</td><td>Obliga a un jugador a ejecutar un comando.</td></tr>
+  <tr><td>/createkit, /kitreset, /kit, /showkit, /delkit</td><td>Gestión de kits.</td></tr>
+</table>
+
+<h3>Moderación y Administración:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/kickall / /kickallmore</td><td>Expulsa a todos los jugadores.</td></tr>
+  <tr><td>/whois [jugador]</td><td>Muestra información detallada de un jugador.</td></tr>
+  <tr><td>/ban [jugador] / /banip [IP]</td><td>Banea jugadores o IPs.</td></tr>
+  <tr><td>/tempban [jugador] [tiempo] [motivo]</td><td>Banea temporalmente a un jugador.</td></tr>
+  <tr><td>/tempbanip [IP] [tiempo] [motivo]</td><td>Banea temporalmente una IP.</td></tr>
+  <tr><td>/unban [jugador] / /unbanip [IP]</td><td>Desbanea jugadores o IPs.</td></tr>
+  <tr><td>/kill [jugador]</td><td>Mata a un jugador o entidad.</td></tr>
+  <tr><td>/seen [jugador]</td><td>Muestra la última conexión de un jugador.</td></tr>
+  <tr><td>/vanish</td><td>Activa o desactiva el modo invisible.</td></tr>
+  <tr><td>/playtime [jugador]</td><td>Muestra el tiempo total jugado.</td></tr>
+  <tr><td>/near</td><td>Muestra jugadores cercanos.</td></tr>
+  <tr><td>/invsee [jugador]</td><td>Mira el inventario de un jugador.</td></tr>
+  <tr><td>/setjail [nombre] / /deljail [nombre]</td><td>Gestiona prisiones.</td></tr>
+  <tr><td>/togglejail [jugador]</td><td>Encarcela o libera jugadores.</td></tr>
+  <tr><td>/jails</td><td>Lista las prisiones creadas.</td></tr>
+</table>
+
+<h3>Efectos y Diversión:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/hat</td><td>Coloca el objeto que sostienes como casco.</td></tr>
+  <tr><td>/thunder / /lighting</td><td>Lanza un rayo en la ubicación que miras.</td></tr>
+  <tr><td>/burn [jugador]</td><td>Prende fuego a un jugador.</td></tr>
+  <tr><td>/kittycannon</td><td>Lanza gatos explosivos.</td></tr>
+  <tr><td>/beezooka</td><td>Lanza abejas explosivas.</td></tr>
+  <tr><td>/nuke</td><td>Lanza un potente explosivo.</td></tr>
+  <tr><td>/tree / /bigtree</td><td>Genera árboles.</td></tr>
+  <tr><td>/firework</td><td>Lanza un fuego artificial.</td></tr>
+  <tr><td>/antioch</td><td>Lanza una explosión masiva.</td></tr>
+  <tr><td>/fireball</td><td>Lanza una bola de fuego.</td></tr>
+  <tr><td>/suicide</td><td>Te mata instantáneamente.</td></tr>
+  <tr><td>/ice</td><td>Coloca hielo.</td></tr>
+</table>
+
+<!-- SuperVanish -->
+<h2>SuperVanish</h2>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/sv [on|off]</td><td>Activa o desactiva el modo invisible para ti.</td></tr>
+  <tr><td>/sv [on|off] &lt;jugador&gt;</td><td>Activa o desactiva el modo invisible para otro jugador.</td></tr>
+  <tr><td>/sv list</td><td>Muestra una lista de jugadores invisibles.</td></tr>
+  <tr><td>/sv tipu</td><td>Alterna la recogida de objetos por jugador.</td></tr>
+</table>
+
+<!-- Tchat -->
+<h2>Tchat</h2>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/cc</td><td>Limpia el chat.</td></tr>
+</table>
+<!-- T-Troll -->
+<h2>T-Troll</h2>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/troll &lt;nick&gt;</td><td>Abre el menú de Troleos para aplicárselas a ese jugador.</td></tr>
+</table>
+
+<!-- ClearLag -->
+<h2>ClearLag</h2>
+
+<h3>Comandos principales:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/lagg clear</td><td>Limpia las entidades configuradas.</td></tr>
+  <tr><td>/lagg check [world1, world2...]</td><td>Muestra información del mundo y más.</td></tr>
+  <tr><td>/lagg reload</td><td>Recarga la configuración.</td></tr>
+  <tr><td>/lagg killmobs</td><td>Mata los mobs configurados.</td></tr>
+  <tr><td>/lagg area &lt;radio&gt;</td><td>Elimina entidades en el radio dado.</td></tr>
+  <tr><td>/lagg tpchunk &lt;x&gt; &lt;z&gt; [mundo]</td><td>Teletransporta al chunk dado.</td></tr>
+  <tr><td>/lagg admin</td><td>Gestiona módulos.</td></tr>
+</table>
+
+<h3>Herramientas de monitoreo:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/lagg tps</td><td>Muestra el TPS estimado (menos preciso que /tps de Spigot).</td></tr>
+  <tr><td>/lagg gc</td><td>Fuerza la recolección de basura (no recomendado).</td></tr>
+  <tr><td>/lagg halt</td><td>Desactiva temporalmente funciones básicas del servidor.</td></tr>
+  <tr><td>/lagg sampleMemory &lt;tiempo&gt;</td><td>Mide el uso de memoria y la recolección de basura por tick.</td></tr>
+  <tr><td>/lagg sampleTicks &lt;ticks&gt; [raw]</td><td>Mide cuánto tiempo toma completar los ticks.</td></tr>
+  <tr><td>/lagg unloadchunks</td><td>Intenta descargar chunks (no recomendado en versiones recientes de Spigot).</td></tr>
+  <tr><td>/lagg profile &lt;tiempo&gt; &lt;tipo&gt;</td><td>Perfila actividades como redstone para ver el chunk más activo.</td></tr>
+  <tr><td>/lagg memory</td><td>Muestra el uso de la memoria heap en tiempo real.</td></tr>
+  <tr><td>/lagg performance</td><td>Muestra el uso de la hebra principal en tiempo real.</td></tr>
+</table>
+
+<!-- FancyNPC -->
+<h2>FancyNPC</h2>
+
+<h3>Comandos principales:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/npc</td><td>Comando principal para gestionar NPCs: crear, modificar y eliminar.</td></tr>
+  <tr><td>/npc help [página]</td><td>Muestra ayuda de todos los comandos.</td></tr>
+  <tr><td>/npc create (nombre) [--position (x y z)] [--world (mundo)] [--type (tipo)]</td><td>Crea un NPC nuevo.</td></tr>
+  <tr><td>/npc copy (npc) (nuevo_nombre)</td><td>Copia (duplica) un NPC existente.</td></tr>
+  <tr><td>/npc remove (npc)</td><td>Elimina un NPC.</td></tr>
+  <tr><td>/npc list [--type (tipo)] [--sort (orden)]</td><td>Lista todos los NPCs.</td></tr>
+  <tr><td>/npc info (npc)</td><td>Muestra información de un NPC.</td></tr>
+</table>
+
+<h3>Personalización de NPCs:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/npc type (npc) (tipo)</td><td>Cambia el tipo de NPC.</td></tr>
+  <tr><td>/npc displayname (npc) (@none | nombre)</td><td>Cambia el nombre visible del NPC.</td></tr>
+  <tr><td>/npc skin (npc) (@none | @mirror | nombre | url | archivo) [--slim]</td><td>Cambia la skin.</td></tr>
+  <tr><td>/npc equipment (npc) (set | clear | list)</td><td>Gestiona el equipamiento.</td></tr>
+  <tr><td>/npc glowing (npc) [disabled | color]</td><td>Cambia el brillo del NPC.</td></tr>
+  <tr><td>/npc show_in_tab (npc) [estado]</td><td>Muestra u oculta en la lista de jugadores.</td></tr>
+  <tr><td>/npc collidable (npc) [estado]</td><td>Habilita/Deshabilita colisión.</td></tr>
+  <tr><td>/npc scale (npc) (factor)</td><td>Cambia el tamaño (solo 1.20.5+).</td></tr>
+  <tr><td>/npc attribute (npc) (set | list)</td><td>Gestiona atributos.</td></tr>
+</table>
+
+<h3>Movimiento y ubicación:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/npc turn_to_player (npc) [estado]</td><td>Hace que el NPC gire hacia el jugador.</td></tr>
+  <tr><td>/npc turn_to_player_distance (npc) [distancia]</td><td>Ajusta la distancia para girar hacia el jugador.</td></tr>
+  <tr><td>/npc move_here (npc)</td><td>Mueve el NPC a tu ubicación.</td></tr>
+  <tr><td>/npc move_to (npc) (x) (y) (z) [mundo] [--look-in-my-direction]</td><td>Mueve el NPC a una ubicación específica.</td></tr>
+  <tr><td>/npc center (npc)</td><td>Centra el NPC en la ubicación especificada.</td></tr>
+  <tr><td>/npc nearby [--radius (radio)] [--type (tipo)] [--sort (orden)]</td><td>Lista NPCs cercanos.</td></tr>
+  <tr><td>/npc teleport (npc)</td><td>Te teletransporta al NPC.</td></tr>
+</table>
+
+<h3>Gestión de interacciones y acciones:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/npc action (npc) (trigger) add (actionType) [valor]</td><td>Añade una acción a un trigger.</td></tr>
+  <tr><td>/npc action (npc) (trigger) add_before (índice) (actionType) [valor]</td><td>Añade una acción antes del índice dado.</td></tr>
+  <tr><td>/npc action (npc) (trigger) add_after (índice) (actionType) [valor]</td><td>Añade una acción después del índice dado.</td></tr>
+  <tr><td>/npc action (npc) (trigger) set (número) (actionType) [valor]</td><td>Establece una acción en la lista.</td></tr>
+  <tr><td>/npc action (npc) (trigger) remove (número)</td><td>Elimina una acción.</td></tr>
+  <tr><td>/npc action (npc) (trigger) move_up (número)</td><td>Sube una acción en la lista.</td></tr>
+  <tr><td>/npc action (npc) (trigger) move_down (número)</td><td>Baja una acción en la lista.</td></tr>
+  <tr><td>/npc action (npc) (trigger) clear</td><td>Limpia todas las acciones de un trigger.</td></tr>
+  <tr><td>/npc action (npc) (trigger) list</td><td>Lista todas las acciones de un trigger.</td></tr>
+  <tr><td>/npc interaction_cooldown (npc) (disabled | cooldown)</td><td>Cambia la duración del cooldown de interacción.</td></tr>
+</table>
+
+<!-- CustomImages -->
+<h2>CustomImages</h2>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/image create &lt;image name|url&gt; [scale percent]</td><td>Crea y comienza a colocar una nueva imagen personalizada.</td></tr>
+  <tr><td>/image delete</td><td>Elimina una imagen existente haciendo clic sobre ella.</td></tr>
+  <tr><td>/image delete near &lt;range&gt;</td><td>Elimina imágenes dentro de un rango específico.</td></tr>
+  <tr><td>/image list</td><td>Muestra una lista de las opciones de imágenes que se pueden agregar.</td></tr>
+</table>
+
+<!-- MythicMobs -->
+<h2>MythicMobs</h2>
+
+<h3>Comandos generales:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/mm o /mythicmobs</td><td>Muestra el menú base con todos los comandos.</td></tr>
+  <tr><td>/mm debug [level]</td><td>Establece el nivel de debug (0 = OFF).</td></tr>
+  <tr><td>/mm debugmode [true/false]</td><td>Activa el modo debug (desactiva spawners aleatorios y otros comportamientos aleatorios).</td></tr>
+  <tr><td>/mm reload o /mm r</td><td>Recarga el plugin.</td></tr>
+  <tr><td>/mm save</td><td>Fuerza el guardado de mobs y spawners activos.</td></tr>
+  <tr><td>/mm version</td><td>Muestra la versión del plugin.</td></tr>
+</table>
+
+<h3>Comandos de objetos:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/mm items o /mm i</td><td>Comandos relacionados con los objetos.</td></tr>
+  <tr><td>/mm items get [item_name] &lt;amount&gt;</td><td>Te da un objeto configurado.</td></tr>
+  <tr><td>/mm items give [player] [item_name] &lt;amount&gt;</td><td>Da un objeto a otro jugador.</td></tr>
+  <tr><td>/mm items give -s [player] [item_name] &lt;amount&gt;</td><td>Da un objeto de forma silenciosa.</td></tr>
+  <tr><td>/mm items give -d [player] [item_name] &lt;amount&gt;</td><td>Da un objeto y deja caer el exceso en el suelo.</td></tr>
+  <tr><td>/mm items list</td><td>Lista todos los objetos configurados.</td></tr>
+  <tr><td>/mm item import &lt;itemName&gt; [fileName]</td><td>Importa un objeto sostenido al directorio Items.</td></tr>
+  <tr><td>/mm items browse</td><td>Abre un menú de todos los Mythic Items cargados. (Premium)</td></tr>
+</table>
+
+<h3>Comandos de mobs:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/mm mobs o /mm m</td><td>Comandos relacionados con mobs.</td></tr>
+  <tr><td>/mm mobs info [mob_name]</td><td>Muestra información detallada sobre un mob.</td></tr>
+  <tr><td>/mm mobs list</td><td>Lista todos los mobs cargados.</td></tr>
+  <tr><td>/mm mobs listactive</td><td>Lista todos los mobs actualmente activos.</td></tr>
+  <tr><td>/mm mobs kill [mob_name]</td><td>Elimina todos los mobs con el nombre dado.</td></tr>
+  <tr><td>/mm mobs kill -f [faction]</td><td>Elimina mobs por facción.</td></tr>
+  <tr><td>/mm mobs killall</td><td>Elimina todos los mobs activos.</td></tr>
+  <tr><td>/mm mobs killall -p</td><td>Elimina todos los mobs persistentes.</td></tr>
+  <tr><td>/mm mobs spawn [mob_name]:&lt;level&gt; &lt;amount&gt; &lt;world,x,y,z,yaw,pitch&gt;</td><td>Genera mobs con el nombre dado.</td></tr>
+  <tr><td>/mm mobs spawn -s [mob_name]:&lt;level&gt; &lt;amount&gt; &lt;world,x,y,z,yaw,pitch&gt;</td><td>Genera mobs de forma silenciosa.</td></tr>
+  <tr><td>/mm mobs stats</td><td>Muestra estadísticas de los mobs cargados.</td></tr>
+</table>
+
+<h3>Comandos de huevos de mob:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/mm egg o /mm e</td><td>Comandos para huevos de mobs.</td></tr>
+  <tr><td>/mm egg get [mob_name] &lt;amount&gt;</td><td>Obtén huevos de un mob.</td></tr>
+  <tr><td>/mm egg give [player] [mob_name] &lt;amount&gt;</td><td>Da huevos de mob a otro jugador.</td></tr>
+</table>
+
+<h3>Comandos de spawners:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/mm spawner o /mm s</td><td>Comandos para spawners.</td></tr>
+  <tr><td>/mm spawner get [spawner_name] &lt;amount&gt;</td><td>Obtén un spawner configurado.</td></tr>
+  <tr><td>/mm spawner give [player] [spawner_name] &lt;amount&gt;</td><td>Da spawner a otro jugador.</td></tr>
+  <tr><td>/mm spawner list</td><td>Lista todos los spawners configurados.</td></tr>
+</table>
+<h3>Comandos de utilidad:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/mm test cast [skillname]</td><td>Lanza una habilidad como si fueras un mob.</td></tr>
+  <tr><td>/mm test mechanic [line]</td><td>Ejecuta una línea de mecánica como si fueras un mob.</td></tr>
+  <tr><td>/mm i get [droptable]</td><td>Obtén un objeto de una tabla de drops.</td></tr>
+</table>
+
+<h3>Comandos de señal:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/mm signal &lt;UUID&gt; &lt;signal&gt;</td><td>Señaliza a un mob para activar ciertas habilidades.</td></tr>
+</table>
+
+<h3>Flags disponibles:</h3>
+<table>
+  <tr><th>Flag</th><th>Descripción</th></tr>
+  <tr><td>-s</td><td>Ejecuta el comando de manera silenciosa (sin mensajes de chat).</td></tr>
+  <tr><td>-p</td><td>Ejecuta el comando en un jugador específico.</td></tr>
+  <tr><td>-t</td><td>Ejecuta el comando en la ubicación del objetivo.</td></tr>
+  <tr><td>-n</td><td>Finge el mob como spawn natural.</td></tr>
+  <tr><td>-f</td><td>Elimina mobs por facción.</td></tr>
+  <tr><td>-d</td><td>Deja caer el objeto en el suelo si el inventario está lleno.</td></tr>
+</table>
+<h3>ShopKeepers:</h3>
+
+<h4>Comandos generales:</h4>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/shopkeeper help</td><td>Muestra los comandos disponibles.</td></tr>
+  <tr><td>/shopkeeper [shop-type] [object-type]</td><td>Crea un admin o player shopkeeper en el bloque objetivo.</td></tr>
+  <tr><td>/shopkeeper reload</td><td>Guarda cambios y recarga la configuración.</td></tr>
+  <tr><td>/shopkeeper notify &lt;'trades'&gt;</td><td>Activa o desactiva notificaciones de comercio.</td></tr>
+  <tr><td>/shopkeeper list [player|'admin'|'all'] [page]</td><td>Lista tiendas propias, de otro jugador o admin.</td></tr>
+  <tr><td>/shopkeeper remove [shop]</td><td>Elimina la tienda especificada.</td></tr>
+  <tr><td>/shopkeeper removeAll [player|'player'|'admin']</td><td>Elimina tiendas propias, de un jugador o todas; requiere confirmación.</td></tr>
+  <tr><td>/shopkeeper give [player] [amount]</td><td>Da ítems de creación de tiendas.</td></tr>
+  <tr><td>/shopkeeper giveCurrency [player] ['base'|'high'] [amount]</td><td>Da ítems de moneda configurada.</td></tr>
+  <tr><td>/shopkeeper setCurrency ['base'|'high']</td><td>Establece el ítem en mano como moneda.</td></tr>
+  <tr><td>/shopkeeper remote [shop] [player]</td><td>Abre la tienda especificada para ti o para otro jugador.</td></tr>
+  <tr><td>/shopkeeper edit [shop]</td><td>Abre editor para la tienda.</td></tr>
+  <tr><td>/shopkeeper transfer &lt;newOwner&gt;</td><td>Transfiere la propiedad de la tienda a otro jugador.</td></tr>
+  <tr><td>/shopkeeper setTradePerm [shop] &lt;permission|'-'|'?'&gt;</td><td>Establece/elimina/muestra permisos para comercio en tienda admin.</td></tr>
+  <tr><td>/shopkeeper setTradedCommand &lt;command|'-'|'?'&gt;</td><td>Asigna/elimina/muestra comando de intercambio para ítem en mano.</td></tr>
+  <tr><td>/shopkeeper setForHire [shop]</td><td>Pone la tienda en venta; sostén costo y apunta a tienda o cofre.</td></tr>
+  <tr><td>/shopkeeper teleport [player] &lt;shop&gt; ['force']</td><td>Teletransporta a jugador cerca de tienda; fuerza si no hay lugar seguro.</td></tr>
+  <tr><td>/shopkeeper editVillager [villager]</td><td>Abre editor para aldeano o comerciante errante objetivo o por UUID.</td></tr>
+</table>
+
+<h4>Comandos de snapshots:</h4>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/shopkeeper snapshot list [shop] [page]</td><td>Lista snapshots de la tienda.</td></tr>
+  <tr><td>/shopkeeper snapshot create [shop] &lt;name&gt;</td><td>Crea snapshot con nombre indicado.</td></tr>
+  <tr><td>/shopkeeper snapshot remove [shop] &lt;name|id&gt;</td><td>Elimina snapshot por nombre o id.</td></tr>
+  <tr><td>/shopkeeper snapshot restore [shop] &lt;name|id&gt;</td><td>Restaura snapshot por nombre o id.</td></tr>
+</table>
+
+<h4>Comandos de utilidad y debug:</h4>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/shopkeeper confirm</td><td>Confirma acciones peligrosas como eliminar todas las tiendas.</td></tr>
+  <tr><td>/shopkeeper replaceAllWithVanillaVillagers</td><td>Reemplaza tiendas por aldeanos vanilla sin IA.</td></tr>
+  <tr><td>/shopkeeper cleanupCitizenShopkeepers</td><td>Elimina tiendas Citizen inválidas.</td></tr>
+  <tr><td>/shopkeeper convertItems [player] ['all']</td><td>Convierte ítems en mano o todos al formato interno de Spigot.</td></tr>
+  <tr><td>/shopkeeper updateItems</td><td>Actualiza ítems con complementos externos.</td></tr>
+  <tr><td>/shopkeeper debug [option]</td><td>Activa o desactiva modo debug u opción específica.</td></tr>
+  <tr><td>/shopkeeper check</td><td>Muestra estadísticas sobre chunks, entidades, tiendas y tiempos.</td></tr>
+  <tr><td>/shopkeeper debugCreateShops [shopCount|'testEquipment']</td><td>Crea tiendas para pruebas o equipo de mobs.</td></tr>
+  <tr><td>/shopkeeper checkitem</td><td>Muestra info debug del ítem en mano.</td></tr>
+  <tr><td>/shopkeeper yaml</td><td>Muestra serialización yaml del ítem en mano.</td></tr>
+  <tr><td>/shopkeeper testDamage [damage] [times-per-tick] [duration-ticks]</td><td>Prueba rendimiento con eventos de daño.</td></tr>
+  <tr><td>/shopkeeper testSpawn [repetitions]</td><td>Mide tiempo para respawn de tiendas activas en el chunk actual.</td></tr>
+</table>
+
+<h3>AdvancedCrates:</h3>
+
+<h4>Comandos generales:</h4>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/ac config</td><td>Abre el editor del plugin dentro del juego.</td></tr>
+  <tr><td>/ac list</td><td>Lista todos los nombres de crates disponibles.</td></tr>
+  <tr><td>/ac reload</td><td>Recarga todas las configuraciones del plugin.</td></tr>
+  <tr><td>/ac togglemessages</td><td>Activa o desactiva mensajes del plugin para el jugador.</td></tr>
+</table>
+
+<h4>Comandos de crates y bloques:</h4>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/ac set &lt;crate&gt;</td><td>Convierte el bloque que miras en una crate estática.</td></tr>
+  <tr><td>/ac remove</td><td>Quita la crate del bloque que estás mirando.</td></tr>
+  <tr><td>/ac addreward &lt;crate&gt;</td><td>Añade el ítem que tienes en mano como recompensa a la crate.</td></tr>
+</table>
+
+<h4>Comandos para dar crates y llaves:</h4>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/ac give &lt;player&gt; &lt;crate&gt; (amount)</td><td>Da crates dinámicos a un jugador.</td></tr>
+  <tr><td>/ac sgive &lt;player&gt; &lt;crate&gt; (amount)</td><td>Da crates de forma silenciosa.</td></tr>
+  <tr><td>/ac giveall &lt;crate&gt; (amount)</td><td>Da crates dinámicos a todos en el servidor.</td></tr>
+  <tr><td>/ac key give &lt;player&gt; &lt;crate&gt; (amount)</td><td>Da llaves físicas de crate a un jugador.</td></tr>
+  <tr><td>/ac key giveall &lt;crate&gt; (amount)</td><td>Da llaves físicas de crate a todos en el servidor.</td></tr>
+</table>
+
+<h4>Comandos de llaves virtuales:</h4>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/ac virtualkey withdraw &lt;crate&gt; (amount)</td><td>Convierte llaves virtuales a físicas.</td></tr>
+  <tr><td>/ac virtualkey give &lt;player&gt; &lt;crate&gt; (amount)</td><td>Da llaves virtuales a un jugador.</td></tr>
+  <tr><td>/ac virtualkey gift &lt;player&gt; &lt;crate&gt; (amount)</td><td>Regala llaves virtuales, quitándolas al remitente.</td></tr>
+  <tr><td>/ac virtualkey set &lt;player&gt; &lt;crate&gt; &lt;amount&gt;</td><td>Ajusta la cantidad de llaves virtuales de un jugador (dar, quitar o resetear).</td></tr>
+  <tr><td>/ac virtualkeys &lt;player&gt;</td><td>Muestra el saldo de llaves virtuales de un jugador.</td></tr>
+  <tr><td>/ac virtualkeys</td><td>Muestra tu saldo de llaves virtuales.</td></tr>
+</table>
+
+<h4>Comandos de pouches (bolsitas):</h4>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/ac pouch list</td><td>Lista todos los pouches disponibles.</td></tr>
+  <tr><td>/ac pouch give &lt;player&gt; &lt;pouch&gt; (amount)</td><td>Da un pouch a un jugador.</td></tr>
+  <tr><td>/ac pouch giveall &lt;pouch&gt; (amount)</td><td>Da un pouch a todos en el servidor.</td></tr>
+  <tr><td>/ac pouch sgive &lt;player&gt; &lt;pouch&gt; (amount)</td><td>Da un pouch de forma silenciosa.</td></tr>
+</table>
+
+<h4>Comandos de recompensas:</h4>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/ac rewards &lt;crate&gt;</td><td>Abre GUI para ver recompensas de una crate.</td></tr>
+  <tr><td>/ac rewards &lt;player&gt; &lt;crate&gt;</td><td>Abre GUI de recompensas para otro jugador.</td></tr>
+</table>
+<!-- ProtectionStones -->
+<h2>ProtectionStones</h2>
+
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/ps give [bloque] [jugador] [cantidad (opcional)]</td><td>Da un bloque de protección a otro jugador como admin.</td></tr>
+  <tr><td>/ps tp [id/jugador] [num (opcional)]</td><td>Te teletransporta a una región o a la región de otro jugador.</td></tr>
+  <tr><td>/ps count [jugador (opcional)]</td><td>Muestra el número de regiones que posees o que posee otro jugador.</td></tr>
+  <tr><td>/ps rent [lease|rent|stopleasing|stoprenting]</td><td>Permite arrendar o rentar regiones.</td></tr>
+  <tr><td>/ps tax</td><td>Gestiona y paga impuestos de las regiones.</td></tr>
+  <tr><td>/ps buy</td><td>Compra la región en la que estás.</td></tr>
+  <tr><td>/ps sell [precio|stop]</td><td>Vende la región en la que estás.</td></tr>
+  <tr><td>/ps setparent [región|none]</td><td>Establece herencia de propiedades desde otra región.</td></tr>
+  <tr><td>/ps priority [número|null]</td><td>Ajusta la prioridad de la región en WorldGuard.</td></tr>
+  <tr><td>/ps region [list|remove|disown] [jugador]</td><td>Comando administrativo para información o edición de regiones de otros jugadores o tuyas.</td></tr>
+</table>
+
+<h3>Administración:</h3>
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/ps reload</td><td>Recarga el plugin con los ajustes del config.</td></tr>
+  <tr><td>/ps admin help</td><td>Muestra el menú de ayuda de admin.</td></tr>
+  <tr><td>/ps admin version</td><td>Muestra la versión del plugin.</td></tr>
+  <tr><td>/ps admin debug</td><td>Activa o desactiva el modo debug (más mensajes en consola).</td></tr>
+  <tr><td>/ps admin hide|unhide</td><td>Oculta o muestra todos los bloques de protección en el mundo.</td></tr>
+  <tr><td>/ps admin cleanup remove [-t tipo (opcional)] [días] [mundo (console)]</td><td>Elimina regiones cuyos propietarios no han estado activos.</td></tr>
+  <tr><td>/ps admin cleanup preview [-t tipo (opcional)] [días] [mundo (console)]</td><td>Previsualiza qué regiones se borrarían con cleanup remove.</td></tr>
+  <tr><td>/ps admin flag [mundo] [flag] [valor|null|default]</td><td>Establece flags globales para todas las regiones en un mundo.</td></tr>
+  <tr><td>/ps admin lastlogon [jugador]</td><td>Muestra la última conexión de un jugador.</td></tr>
+  <tr><td>/ps admin lastlogons</td><td>Lista las últimas conexiones de todos los jugadores.</td></tr>
+  <tr><td>/ps admin stats [jugador (opcional)]</td><td>Muestra estadísticas generales del plugin.</td></tr>
+  <tr><td>/ps admin recreate</td><td>Recrea todas las regiones con el radio configurado.</td></tr>
+  <tr><td>/ps admin settaxautopayers</td><td>Agrega pagadores automáticos de impuestos a todas las regiones que no los tengan.</td></tr>
+  <tr><td>/ps admin forcemerge [mundo]</td><td>Fusiona regiones superpuestas con mismos propietarios, miembros y flags.</td></tr>
+  <tr><td>/ps admin changeblock [mundo] [de-bloque] [a-bloque]</td><td>Cambia el tipo de bloque de protección de uno a otro.</td></tr>
+  <tr><td>/ps admin changeregiontype [mundo] [de-tipo] [a-tipo]</td><td>Corrige el tipo interno de las regiones.</td></tr>
+  <tr><td>/ps admin fixregions</td><td>Repara errores en todas las regiones del mundo.</td></tr>
+</table>
+
+<!-- BetterTeams -->
+<h2>BetterTeams</h2>
+
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/teama help</td><td>Muestra la lista de comandos administrativos.</td></tr>
+  <tr><td>/teama reload</td><td>Recarga los archivos de configuración.</td></tr>
+  <tr><td>/teama chatspy</td><td>Espía los mensajes del chat de equipo.</td></tr>
+  <tr><td>/teama title [jugador] [título]</td><td>Establece el título de un jugador.</td></tr>
+  <tr><td>/teama home [equipo]</td><td>Teletransporta a la casa de un equipo.</td></tr>
+  <tr><td>/teama version</td><td>Muestra la versión del plugin.</td></tr>
+  <tr><td>/teama name [equipo] [nombre]</td><td>Cambia el nombre de un equipo.</td></tr>
+  <tr><td>/teama description [equipo] [texto]</td><td>Cambia la descripción de un equipo.</td></tr>
+  <tr><td>/teama invite [equipo] [jugador]</td><td>Invita a un jugador a un equipo.</td></tr>
+  <tr><td>/teama join [jugador] [equipo]</td><td>Fuerza a un jugador a unirse a un equipo.</td></tr>
+  <tr><td>/teama leave [jugador]</td><td>Fuerza a un jugador a salir de su equipo.</td></tr>
+  <tr><td>/teama create [nombre]</td><td>Crea un equipo sin miembros.</td></tr>
+  <tr><td>/teama promote [jugador]</td><td>Asciende a un jugador.</td></tr>
+  <tr><td>/teama demote [jugador]</td><td>Degrada a un jugador.</td></tr>
+  <tr><td>/teama setowner [jugador]</td><td>Asigna a un nuevo dueño (si está habilitado “singleOwner”).</td></tr>
+  <tr><td>/teama warp [equipo] [contraseña]</td><td>Teletransporta a un warp o lista los warps del equipo.</td></tr>
+  <tr><td>/teama setwarp [equipo] [contraseña]</td><td>Establece un warp para el equipo.</td></tr>
+  <tr><td>/teama delwarp [equipo] [contraseña]</td><td>Elimina un warp de un equipo.</td></tr>
+  <tr><td>/teama purge [score|money]</td><td>Reinicia puntuaciones o dinero de todos los equipos.</td></tr>
+  <tr><td>/teama score &lt;set|add|remove&gt; &lt;jugador|equipo&gt; [cantidad]</td><td>Edita la puntuación.</td></tr>
+  <tr><td>/teama money &lt;set|add|remove&gt; &lt;jugador|equipo&gt; [cantidad]</td><td>Edita el saldo.</td></tr>
+  <tr><td>/teama disband [equipo]</td><td>Disuelve un equipo.</td></tr>
+  <tr><td>/teama setrank [equipo] [rango]</td><td>Establece el rango de un equipo.</td></tr>
+  <tr><td>/teama tag [equipo] [etiqueta]</td><td>Cambia la etiqueta de un equipo.</td></tr>
+  <tr><td>/teama color [equipo] [código]</td><td>Cambia el color de un equipo.</td></tr>
+  <tr><td>/teama chest claim [equipo]</td><td>Reclama un cofre para un equipo.</td></tr>
+  <tr><td>/teama chest remove [equipo]</td><td>Elimina un reclamo de cofre.</td></tr>
+  <tr><td>/teama chest removeall [equipo]</td><td>Elimina todos los cofres reclamados.</td></tr>
+  <tr><td>/teama chest disableclaims</td><td>Desactiva todos los reclamos de cofres temporalmente.</td></tr>
+  <tr><td>/teama chest enableclaims</td><td>Activa los reclamos de cofres.</td></tr>
+  <tr><td>/teama echest [equipo]</td><td>Visualiza el ender chest de un equipo.</td></tr>
+  <tr><td>/teama teleport [x] [y] [z] [pitch] [yaw]</td><td>Teletransporta a un equipo a una ubicación.</td></tr>
+  <tr><td>/teama holo create</td><td>Crea un holograma en tu ubicación.</td></tr>
+  <tr><td>/teama holo remove</td><td>Elimina el holograma más cercano.</td></tr>
+</table>
+
+<!-- AdvancedEnchantments -->
+<h2>AdvancedEnchantments</h2>
+
+<table>
+  <tr><th>Comando</th><th>Descripción</th></tr>
+  <tr><td>/aegive (jugador) (material) (cantidad) [args opcionales]</td><td>Da un ítem a un jugador.</td></tr>
+  <tr><td>/alchemist</td><td>Abre el alquimista.</td></tr>
+  <tr><td>/asets</td><td>Accede a sets de armadura y armas personalizadas.</td></tr>
+  <tr><td>/enchanter</td><td>Abre el encantador.</td></tr>
+  <tr><td>/gkits</td><td>Abre los GKits.</td></tr>
+  <tr><td>/tinkerer</td><td>Abre el artesano.</td></tr>
+  <tr><td>/withdrawsouls (cantidad)</td><td>Retira almas de un ítem.</td></tr>
+  <tr><td>/ae</td><td>Comando principal del plugin.</td></tr>
+  <tr><td>/ae about</td><td>Muestra información sobre la versión actual.</td></tr>
+  <tr><td>/ae admin [página|búsqueda]</td><td>Muestra todos los encantamientos disponibles (100% éxito).</td></tr>
+  <tr><td>/ae enchant (encantamiento) (nivel)</td><td>Aplica un encantamiento al ítem en mano.</td></tr>
+  <tr><td>/ae give (jugador) (encantamiento) (nivel)</td><td>Da un libro encantado personalizado.</td></tr>
+  <tr><td>/ae givebook (jugador) (encantamiento) (nivel) (cantidad) (éxito) (destrucción)</td><td>Da libros con tasas específicas.</td></tr>
+  <tr><td>/ae givegkit (jugador) (gkit)</td><td>Da ítems de un GKit.</td></tr>
+  <tr><td>/ae giveitem (jugador) (ítem) [cantidad]</td><td>Da varios ítems del plugin.</td></tr>
+  <tr><td>/ae giverandombook (jugador) (grupo) [cantidad]</td><td>Da libros aleatorios de un grupo.</td></tr>
+  <tr><td>/ae givercbook (tipo) (jugador) (cantidad)</td><td>Da un libro “clic derecho” para aplicar.</td></tr>
+  <tr><td>/ae greset (jugador) (gkit)</td><td>Reinicia el cooldown de un GKit.</td></tr>
+  <tr><td>/ae info (encantamiento)</td><td>Muestra información de un encantamiento.</td></tr>
+  <tr><td>/ae lastchanged</td><td>Muestra cambios recientes tras /ae reload.</td></tr>
+  <tr><td>/ae list</td><td>Lista todos los encantamientos personalizados.</td></tr>
+  <tr><td>/ae magicdust (grupo) (tasa) (jugador)</td><td>Da polvo mágico con tasa específica.</td></tr>
+  <tr><td>/ae market</td><td>Abre un menú para descargar encantamientos comunitarios.</td></tr>
+  <tr><td>/ae open (jugador) (enchanter|tinkerer|alchemist)</td><td>Fuerza la apertura de una GUI a un jugador.</td></tr>
+  <tr><td>/ae pasteenchants</td><td>Genera un pastebin con todos los encantamientos.</td></tr>
+  <tr><td>/ae plinfo</td><td>Genera un bin con info sobre el plugin y el servidor.</td></tr>
+  <tr><td>/ae premade</td><td>Visualiza configuraciones prediseñadas.</td></tr>
+  <tr><td>/ae reload</td><td>Recarga toda la configuración del plugin.</td></tr>
+  <tr><td>/ae setSouls (cantidad)</td><td>Establece la cantidad de almas en el ítem en mano.</td></tr>
+  <tr><td>/ae tinkererItem (jugador) (cantidad)</td><td>Da el ítem de recompensa del artesano.</td></tr>
+  <tr><td>/ae unenchant (encantamiento)</td><td>Elimina un encantamiento del ítem en mano.</td></tr>
+  <tr><td>/ae view (encantamiento)</td><td>Muestra información de un encantamiento en menú.</td></tr>
+  <tr><td>/ae zip</td><td>Crea un archivo zip con el contenido del plugin.</td></tr>
+</table>
+
+</body>
+</html>
