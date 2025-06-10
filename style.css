@@ -1,65 +1,147 @@
-body {
-  background-color: #121212;
-  color: #e0e0e0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  margin: 0;
-  padding: 6em;
-  display: flex; /* Añade flexbox */
-  flex-direction: column; /* Acomoda elementos en columna */
-  align-items: center; /* Centra horizontalmente */
+@font-face {
+  font-family: 'MCFont'; /* Nombre que le das a la fuente */
+  src: url('font/mcfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-h1, h2 {
-  color: #ffcc00;
+@font-face {
+  font-family: 'MCFont2'; /* Nombre que le das a la fuente */
+  src: url('font/mcfont_2.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.title {
+    margin-top: 1em;
+    font-size: 3em;
+    text-align: center;
 }
 
-h1 {
-  font-size: 3em;
+.ip {
+    color: rgb(238, 152, 87);
+    text-align: center;
+    font-size: 2em;
+    font-family: 'MCFont2', sans-serif;
 }
 
-h2 {
-  font-size: 2.5em;
+.nav{
+    margin-top: 3em;
+    font-size: 1.6em;
 }
 
-nav ul {
-  list-style: none;
+.nav-list {
   padding: 0;
+  list-style: none;
 }
 
-nav li {
-  margin: 10px 0;
+.nav-list__item {
+  width: 10em;
+  margin: 1em auto; /* Esto centra cada li horizontalmente */
   text-align: center;
+}
+.nav-list__link {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #444;
+    width: 10em;
+    padding: 1em;
+}
+
+.nav-list__link:hover{
+    background-color: rgb(118, 118, 118);
+}
+
+body {
+    background-color: rgb(28, 28, 28);
+    color: rgb(220, 220, 220);
+    font-family: 'Arial', sans-serif;
+    font-weight: 100;
 }
 
 a {
-  color: #ffcc00;
-  text-decoration: none;
+    color: white;
 }
 
-a:hover {
-  text-decoration: underline;
+h3, h4 {
+    text-align: center;
 }
 
-/* Estilo base para pantallas grandes (PC) */
+h1 {
+    color: rgb(210, 188, 45);
+    font-family: 'MCFont', sans-serif;
+}
+
+h2 {
+    margin-left: 0.3em;
+    font-size: 4em;
+    margin: 0.5em;
+    text-align: left;
+    font-family: 'MCFont', sans-serif;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.4em;
+}
+
+details{
+    background-color: #212121;
+}
+
+/* Titulo desplegable de las tablas */
+
+summary {
+    margin-top: 0.3em;
+    font-family: sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+    top: 0;
+    position: sticky;
+    background-color: #2a2a2ab8;
+    padding: 0.2em;
+}
+
+summary:hover{
+    background-color: rgba(56, 56, 56, 0.741);
+}
+
+/* Estilo general de la tabla */
 table {
-  width: 50%;
+  width: 80%;
+  margin: 2rem auto;
   border-collapse: collapse;
-  margin-top: 20px;
-}
-
-/* Estilo para pantallas pequeñas (celulares) */
-@media (max-width: 768px) {
-  table {
-    width: 90%;
-  }
-}
-
-th, td {
+  background-color: #2d2d2d;
+  color: #f0f0f0;
   border: 1px solid #444;
-  padding: 8px;
 }
 
+/* Cabecera */
+thead {background-color: #444;}
 th {
-  background-color: #222;
+  text-align: left;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  border-bottom: 1px solid #555;
+}
+
+/* Filas */
+td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #444;
+}
+
+svg {
+  width: 3em; /* Ajusta tamaño */
+  height: 3em;
+  fill: #a4bbff; /* Cambia color */
+  margin-right: 0.3em; /* Separación del texto */
+  vertical-align: middle;
+}
+
+.discord {
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
 }
