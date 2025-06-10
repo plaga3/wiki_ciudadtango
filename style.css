@@ -61,7 +61,6 @@
   fill: #3c7941;
 }
 
-
 body {
   background-color: rgb(28, 28, 28);
   color: rgb(220, 220, 220);
@@ -162,4 +161,46 @@ svg {
 .discord {
   padding-top: 0.4em;
   padding-bottom: 0.4em;
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+/* Responsive: ajusta fuentes y anchos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.5em;
+  }
+
+  .ip {
+    font-size: 1.5em;
+  }
+
+  .nav {
+    font-size: 1.2em;
+  }
+
+  .nav-list__item,
+  .nav-list__link {
+    width: 90%;
+    margin: 0.5em auto;
+  }
+
+  svg {
+    width: 2em;
+    height: 2em;
+  }
+
+  h2 {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
 }
