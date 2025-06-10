@@ -1,32 +1,32 @@
 @font-face {
-  font-family: 'MCFont'; /* Nombre que le das a la fuente */
-  src: url('res/font/mcfont.ttf') format('truetype');
+  font-family: "MCFont"; /* Nombre que le das a la fuente */
+  src: url("font/mcfont.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'MCFont2'; /* Nombre que le das a la fuente */
-  src: url('res/font/mcfont_2.ttf') format('truetype');
+  font-family: "MCFont2"; /* Nombre que le das a la fuente */
+  src: url("font/mcfont_2.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 .title {
-    margin-top: 1em;
-    font-size: 3em;
-    text-align: center;
+  margin-top: 1em;
+  font-size: 3em;
+  text-align: center;
 }
 
 .ip {
-    color: rgb(238, 152, 87);
-    text-align: center;
-    font-size: 2em;
-    font-family: 'MCFont2', sans-serif;
+  color: rgb(238, 152, 87);
+  text-align: center;
+  font-size: 2em;
+  font-family: "MCFont2", sans-serif;
 }
 
-.nav{
-    margin-top: 3em;
-    font-size: 1.6em;
+.nav {
+  margin-top: 3em;
+  font-size: 1.6em;
 }
 
 .nav-list {
@@ -40,72 +40,84 @@
   text-align: center;
 }
 .nav-list__link {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #444;
-    width: 10em;
-    padding: 1em;
+  display: inline-block;
+  text-decoration: none;
+  background-color: #c0c0c0;
+  color: #2d2d2d;
+  border-style: outset;
+  border-width: 4px;
+  border-color: white;
+  width: 10em;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
-.nav-list__link:hover{
-    background-color: rgb(118, 118, 118);
+.nav-list__link:hover {
+  background-color: rgb(99, 228, 66);
+  border-color: rgb(99, 228, 66);
 }
+
+.nav-list__link:hover svg {
+  fill: #3c7941;
+}
+
 
 body {
-    background-color: rgb(28, 28, 28);
-    color: rgb(220, 220, 220);
-    font-family: 'Arial', sans-serif;
-    font-weight: 100;
+  background-color: rgb(28, 28, 28);
+  color: rgb(220, 220, 220);
+  font-family: "Arial", sans-serif;
+  font-weight: 100;
 }
 
 a {
-    color: white;
+  color: white;
 }
 
-h3, h4 {
-    text-align: center;
+h3,
+h4 {
+  text-align: center;
 }
 
 h1 {
-    color: rgb(210, 188, 45);
-    font-family: 'MCFont', sans-serif;
+  color: rgb(210, 188, 45);
+  font-family: "MCFont", sans-serif;
 }
 
 h2 {
-    margin-left: 0.3em;
-    font-size: 4em;
-    margin: 0.5em;
-    text-align: left;
-    font-family: 'MCFont', sans-serif;
+  margin-left: 0.3em;
+  font-size: 4em;
+  margin: 0.5em;
+  text-align: left;
+  font-family: "MCFont", sans-serif;
 }
 
 h3 {
-    font-size: 2em;
+  font-size: 2em;
 }
 
 h4 {
-    font-size: 1.4em;
+  font-size: 1.4em;
 }
 
-details{
-    background-color: #212121;
+details {
+  background-color: #212121;
 }
 
 /* Titulo desplegable de las tablas */
 
 summary {
-    margin-top: 0.3em;
-    font-family: sans-serif;
-    font-size: 2em;
-    font-weight: bold;
-    top: 0;
-    position: sticky;
-    background-color: #2a2a2ab8;
-    padding: 0.2em;
+  margin-top: 0.3em;
+  font-family: sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  top: 0;
+  position: sticky;
+  background-color: #2a2a2ab8;
+  padding: 0.2em;
 }
 
-summary:hover{
-    background-color: rgba(56, 56, 56, 0.741);
+summary:hover {
+  background-color: rgba(56, 56, 56, 0.741);
 }
 
 /* Estilo general de la tabla */
@@ -119,7 +131,9 @@ table {
 }
 
 /* Cabecera */
-thead {background-color: #444;}
+thead {
+  background-color: #444;
+}
 th {
   text-align: left;
   padding: 0.75rem 1rem;
@@ -133,15 +147,19 @@ td {
   border-bottom: 1px solid #444;
 }
 
+tr:hover {
+  background-color: #434035;
+}
+
 svg {
   width: 3em; /* Ajusta tamaño */
   height: 3em;
-  fill: #a4bbff; /* Cambia color */
+  fill: #7289da; /* Cambia color */
   margin-right: 0.3em; /* Separación del texto */
   vertical-align: middle;
 }
 
 .discord {
-    padding-top: 0.4em;
-    padding-bottom: 0.4em;
+  padding-top: 0.4em;
+  padding-bottom: 0.4em;
 }
